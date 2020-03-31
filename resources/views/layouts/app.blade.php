@@ -32,7 +32,7 @@
         @yield('content')
         {{-- </main> --}}
     </div>
-    <script src="/lsapp/vendor/laravel-ckeditor/ckeditor.js"></script>
+    <script src="/vendor/laravel-ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('article-ckeditor');
     </script>

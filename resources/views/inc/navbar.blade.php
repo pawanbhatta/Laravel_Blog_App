@@ -18,17 +18,17 @@
             </ul>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="/lsapp/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/lsapp/about">About</a>
+                <a class="nav-link" href="/about">About</a>
               </li>
       
               <li class="nav-item">
-                <a class="nav-link" href="/lsapp/services" tabindex="-1" aria-disabled="true">Services</a>
+                <a class="nav-link" href="/services" tabindex="-1" aria-disabled="true">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/lsapp/posts" tabindex="-1" aria-disabled="true">Blog</a>
+                <a class="nav-link" href="/posts" tabindex="-1" aria-disabled="true">Blog</a>
               </li>
             </ul>
 
@@ -53,7 +53,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-                          <a href="/lsapp/home" class="dropdown-item">Dashboard</a>
+                          <a href="/home" class="dropdown-item">Dashboard</a>
 
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();

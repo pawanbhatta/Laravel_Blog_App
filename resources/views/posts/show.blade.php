@@ -3,10 +3,10 @@
 @section('content')
 <div class="container">
     <br>
-    <a href="/lsapp/posts" class="btn btn-default">Go Back</a>
+    <a href="/posts" class="btn btn-default">Go Back</a>
     <hr>
-    <h1><a href="/lsapp/posts/{{$post->id}}/edit">{{$post->title}}</a></h1>
-    <img style="object-fit: scale-down; background-color:powderblue;" src="/lsapp/public/storage/cover_images/{{$post->cover_image}}">
+    <h1><a href="/posts/{{$post->id}}/edit">{{$post->title}}</a></h1>
+    <img style="heigth:200px; background-color:powderblue;" src="/storage/cover_images/{{$post->cover_image}}">
     <br><br>
     <div>
         {!!$post->body!!}
@@ -18,7 +18,7 @@
     @if (!Auth::guest())   
     {{-- checks if the post belongs to its owner (authenticated(logged in)) user --}}
         @if (Auth::user()->id == $post->user_id)
-            <a href="/lsapp/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
+            <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
 
             {!!Form::open(['action'=>['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right']) !!}
                 {{Form::hidden('_method','DELETE')}}
